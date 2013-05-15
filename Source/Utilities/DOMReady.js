@@ -67,11 +67,11 @@ if (testElement.doScroll && !doScrollWorks()){
 /*</ltIE8>*/
 
 if (document.readyState) {
-    checks.push(function(){
-	    var state = document.readyState;
-	    return (state == 'loaded' || state == 'complete');
-    });
-    shouldPoll = true;
+	checks.push(function(){
+		var state = document.readyState;
+		return (state == 'loaded' || state == 'complete');
+	});
+	shouldPoll = true;
 }
 
 if ('onreadystatechange' in document) document.addListener('readystatechange', check);
